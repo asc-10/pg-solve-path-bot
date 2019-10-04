@@ -77,7 +77,7 @@ for submission in subreddit.stream.submissions(skip_existing=True):
         ## Doing the post 
         if playerPingable and (lastRoundCommentedOn != previousRoundNumber):
             threadToPostTo = reddit.submission(previousRoundThread)
-            comment = threadToPostTo.reply("How did you find the answer /u/" + str(previousRoundWinner) + " ?")
+            comment = threadToPostTo.reply("How did you find the answer /u/" + str(previousRoundWinner) + "?")
             commentsToTrack.append([comment.id, playerToTrack])
             
             lastRoundCommentedOn = previousRoundNumber
