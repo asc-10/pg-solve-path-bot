@@ -8,7 +8,7 @@ This is a simple bot that asks for solve paths on /r/PictureGame. Whenever an us
 - The bot posts a new reply, does audit of its previous comments and checks its inbox for commands
 - If a player doesn't reply the bot within 30 minutes, the bot marks the player in the players.yaml file.
 - The bot deletes its comment if nobody has replied it within 30 minutes
-- 30 minutes is the minimum time before any action is taken by the bot. In practice it will be 30 minutes + the time until a new round gets posted.
+- 30 minutes is the minimum time before the bot will delete its unanswered comment. In practice it will be 30 minutes + the time until a new round gets posted.
 - If the round winner doesn't reply 3 times in a row, the bot will stop pinging the player entirely
 - If the player hasn't replied only once or twice, but eventually comments on the second or the third mention, then the player will be removed from the players.yaml and the counter resets
 - The bot doesn't differentiate between who answers to it. The counter gets reset even if someone else than winner responds to it.
